@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./images/trello-logo.png" type="image/x-icon">
+    <title>E-commerce website | Trello</title>
+  </head>
+  <body>
+  <nav>
+    <h1>E-commerce website</h1>
+  </nav>
+    <div id="boardWrapper">
+      <div id="listsContainer">
+        <button id="createListBtn"> +add another List</button>
+      </div>
+    </div>
+
+    <div id="modalOverlay" class="modal-overlay">
+      <div class="modal">
+        <h3 id="modalTitle">Enter Name</h3>
+        <input type="text" id="modalInput" placeholder="Enter value">
+        <div class="modal-buttons">
+          <button id="modalCancel">Cancel</button>
+          <button id="modalSave">Save</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="cardOverlay" class="card-overlay">
+      <div class="card-modal">
+        <h2 id="cardTitle"></h2>
+
+        <div class="card-modal-actions">
+          <button id="renameCardBtn">Rename</button>
+          <button id="archiveCardBtn">Archive</button>
+          <button id="checklistCardBtn">Add Checklist</button>
+        </div>
+
+        <div id="modalChecklists"></div>
+
+        <button id="closeCardModal">Close</button>
+      </div>
+    </div>
+
+    <script src="./Config.js"></script>
+    <script src="./script.js"></script>
+
+  </body>
+</html>
